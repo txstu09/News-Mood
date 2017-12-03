@@ -1,4 +1,9 @@
+# News Mood
 
+### Analysis
+* No clear trends present in scatter plot as tweets appear to be evenly distributed accross sentiments and media source
+* Overall sentiment analysis does indicate that in the last 100 tweets, CNN has been more negative, however that compound score is only dipping into the negatives at -0.2 and is not extreme.
+* All five media source Twitter accounts seem to use mostly neutral or close to neutral language.
 
 ```python
 import numpy as np
@@ -61,7 +66,6 @@ status = api.rate_limit_status()
 print(status['resources']['statuses']['/statuses/user_timeline']['remaining'])
 ```
 
-    900
     
 
 
@@ -117,7 +121,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](images/Discrete_Tweet_Sentiment_Analysis.png)
 
 
 
@@ -141,10 +145,10 @@ plt.ylim(-0.22, .1)
 plt.margins(0, 0.1)
 plt.gca().xaxis.grid(False)
 
-plt.savefig('images/DOverall_Tweet_Sentiment_Analysis.png')
+plt.savefig('images/Overall_Tweet_Sentiment_Analysis.png')
 plt.show()
 ```
 
 
-![png](output_8_0.png)
+![png](images/Overall_Tweet_Sentiment_Analysis.png)
 
